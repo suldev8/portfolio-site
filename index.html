@@ -1,35 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Sulaiman's Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Sulaiman's Portfolio</title>
 </head>
+
 <body>
     <!-- The header conains the logo and the name with speciality -->
-  <header class="header">
-    <div class="logo-container">
-        <img class="logo" src="assets/images/profile-logo.png" alt="Profile logo">
-    </div>
-    <div class="name-container">
-      <h1>Sulaiman Alhabib</h1>
-      <p>Web developer</p>
-    </div>
-  </header>
-  <hr class="saparator">
-  <main class="main">
-    <section class="front-pic-conatiner">
-      <img class="front-pic" src="assets/images/front-pic.svg" alt="">
-    </section>
-    <h2 class="featured-work-title">Featured Work</h2>
-    <section>
-      <ul class="projects-list">
-        <li>project 1</li>
-        <li>project 2</li>
-        <li>project 3</li>
-      </ul>
-    </section>
-  </main>
+    <header class="header">
+        <div class="logo-container">
+            <img class="logo" src="assets/images/porfile-logo.png" alt="Profile logo" />
+        </div>
+        <div class="name-container">
+            <h1 class="name">Sulaiman Alhabib</h1>
+            <p>Web developer</p>
+        </div>
+    </header>
+    <!-- The main tag contains two sections the first one is for front pic and a motto 
+         and the other one for featured porjects -->
+    <main class="container card">
+        <section class="front-container">
+            <h2 class="front-motto">
+                <em>"It is never done untill it is fast, responsive, and correct."</em>
+            </h2>
+            <picture>
+                <source media="(max-width: 550px) " srcset="assets/images/front-pic-550w.png" />
+                <source media="(min-width: 551px)" srcset="assets/images/front-pic-1000w.png" />
+                <img class="front-pic" src="assets/images/front-pic-1000w.png" alt="front picture" />
+            </picture>
+        </section>
+        <section class="featured-work">
+            <h2 class="featured-work-title">Featured Work</h2>
+            <!-- This lists the projects and each project has a link to its github repository -->
+            <ul class="projects-list">
+                <li class="projects-list-item card">
+                    <a href="https://github.com/suldev8/catalog" target="_blank">
+                        <img class="project-image" src="assets/images/catalog.png" alt="Catalog logo" />
+                        <h3 class="project-title">Catalog</h3>
+                    </a>
+                </li>
+                <li class="projects-list-item card">
+                    <a href="https://github.com/suldev8/warehouse-app" target="_blank">
+                        <img class="project-image" src="assets/images/warhouse-app.png" alt="Warehouse app logo" />
+                        <h3 class="project-title">Warehouse App</h3>
+                    </a>
+                </li>
+                <li class="projects-list-item card">
+                    <a href="https://github.com/suldev8/public-speaking-evaluation" target="_blank">
+                        <img class="project-image" src="assets/images/public-speaking-evaluation.jpg" alt="Public speaking evaluation logo" />
+                        <h3 class="project-title">Public Speaking Evaluation</h3>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body>
+
 </html>
